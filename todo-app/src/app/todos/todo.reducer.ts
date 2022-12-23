@@ -3,7 +3,10 @@ import { Todo } from "./models/todo.model";
 import { create } from "./todo.actions";
 
 export const initialState: Todo[] = [
-  new Todo('First Todo')
+  new Todo('Laundry'),
+  new Todo('Lunch'),
+  new Todo('Clean the house'),
+  new Todo('Feed the cats')
 ];
 
 export const todosReducer = createReducer(
