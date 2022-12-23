@@ -19,3 +19,8 @@ export const remove = createAction(
   '[TODO] Remove Todo',
   props<{ id: number }>()
 );
+
+export const toggleAll = createAction(
+  '[TODO] ToggleAll Todo',
+  props<{ completed: boolean }>()
+);
