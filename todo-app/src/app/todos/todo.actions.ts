@@ -1,4 +1,5 @@
 import { createAction, props } from '@ngrx/store';
+import { filterTypes } from '../filter/filter.actions';
 
 export const create = createAction(
   '[TODO] Create Todo',
@@ -24,3 +25,7 @@ export const toggleAll = createAction(
   '[TODO] ToggleAll Todo',
   props<{ completed: boolean }>()
 );
+
+export const removeCompleted = createAction(
+  '[TODO] removeCompleted Todo'
+)
